@@ -1,0 +1,213 @@
+/*компьютер*/
+@media only screen and (max-width: 3000px) {
+  body {
+    min-width: 500px;
+    background-color: #313235;
+    background-color: #0248A0;
+  }
+  header {
+    margin: 0px 40px;
+    height: auto;
+    display: flex;
+  }
+  header img {
+    margin: auto;
+    padding: 10px;
+    width: 10%;
+    height: 10%;
+  }
+  footer {
+    height: 100px;
+  }
+  #menu{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-right: 40px;
+    margin-left: 0px;
+    z-index: 10;
+  }
+  #menu ul{
+    width: 100%;
+    height: auto;
+    list-style: none;
+  }
+  #menu > ul::after{
+    display: block;
+    width: 100%;
+    height: 0px;
+    clear: both;
+    content: " ";
+  }
+  #menu ul li{
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+  }
+  #menu ul li a{
+    display: block;
+    padding: 9px 25px 0px 25px;
+    font-size: calc(16px + 8 * (100vw - 360px) / 880);
+    line-height: 1.3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 36px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 2px;
+  }
+  main {
+    background-color: #0248A0;
+  }
+  .screensaver img{
+    width: 100%;
+    transition: filter 0.5s linear; /* Время эффекта */
+    display: inline-block;
+    line-height: 0;
+    filter: brightness(1) grayscale(1) opacity(0.5);
+  }
+   .screensaver {
+    position: relative;
+  }
+   .screensaver img:hover{
+     filter: brightness(1) grayscale(0) opacity(0.7);
+  }
+  .screensaver p {
+    position: absolute;
+    color: rgb(230, 230, 230);
+    padding: 10px;
+    left: 0%;
+    top: 5%;
+    height: auto;
+    font-size: clamp(20px, 6.25vw, 100px);
+    /*1600px размер экрана / 100 размер шрифта
+    1vw = 16px
+    100px / 16px = 6.25vw
+    */
+    background-color: rgba(41, 41, 41, 0.8);
+    line-height: 1.3em;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  .content img {
+    border-radius: 15px;
+    min-width: 50%;
+    max-width: 100%;
+  }
+  .quote {
+    background-color: rgba(41, 41, 41, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    font-size: calc(25px + 8 * (100vw - 360px) / 880);
+    margin: 30px 90px;
+  }
+  p {
+    margin: 20px 40px;
+    font-size: calc(16px + 8 * (100vw - 360px) / 880);
+    line-height: 1.3em;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    color: rgb(230, 230, 230);
+  }
+}
+/*планшет горизонтально*/
+@media only screen and (max-width: 1100px) {
+    body {
+    margin: 0px 40px;
+    min-width: 500px;
+    background-color: #890;
+  }
+}
+/*мобильное устройство горизонтально или планшет вертикально*/
+@media only screen and (max-width: 900px) {
+    body {
+    margin: 0px 40px;
+    min-width: 500px;
+    background-color: #024;
+  }
+}
+/*мобильное устройство*/
+@media only screen and (max-width: 500px) {
+  body {
+    margin: 0px 40px;
+    background-color: #313235;
+    min-width: 300px;
+  }
+  header {
+    background-color: #0248A0;
+    height: auto;
+    display: flex;
+  }
+  header img {
+    margin: auto;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+  }
+  footer {
+    background-color: #42b0ff;
+    height: 100px;
+  }
+  #menu{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-right: 40px;
+    margin-left: 0px;
+    z-index: 10;
+    background-color: #313235;
+  }
+  #menu ul{
+    width: 100%;
+    height: auto;
+    list-style: none;
+  }
+  #menu > ul::after{
+    display: block;
+    width: 100%;
+    height: 0px;
+    clear: both;
+    content: " ";
+  }
+  #menu ul li{
+    position: relative;
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+  }
+  #menu ul li a{
+    display: block;
+    padding: 9px 25px 0px 25px;
+    font-size:calc(16px + 8 * (100vw - 360px) / 880);
+    line-height: 1.3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 36px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 2px;
+  }
+  main {
+    background-color: #0248A0;
+    padding: 20px;
+  }
+  p {
+    margin: 20px 40px;
+    font-size: 23px;
+    line-height: 1.3em;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+  }
+}
